@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "h8OtwyDsc5lOo6swpW23MJ0ktfaibf3WRG2DGf+TKWoCfHtynIyhrbrc6jdx4Alh2eAhtj305Ppow+td63D7qQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Nicol\\Desktop\\Proyecto DAMI\\AppDAM-API\\AppDAM-API\\AppDAM-API.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Nicol\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "C:\\Users\\Nicol\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\Nicol\\.nuget\\packages\\swashbuckle.aspnetcore\\6.5.0\\swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
+    "C:\\Users\\Nicol\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.5.0\\swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
+    "C:\\Users\\Nicol\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.5.0\\swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
+    "C:\\Users\\Nicol\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.5.0\\swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}
