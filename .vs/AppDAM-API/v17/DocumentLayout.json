@@ -1,7 +1,60 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Nicol\\Desktop\\Proyecto DAMI\\AppDAM-API\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DDAFCD1F-FBA7-422C-B018-2D735675A7A2}|AppDAM-API\\AppDAM-API.csproj|c:\\users\\nicol\\desktop\\proyecto dami\\appdam-api\\appdam-api\\repositorio\\interfaces\\icategoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDAFCD1F-FBA7-422C-B018-2D735675A7A2}|AppDAM-API\\AppDAM-API.csproj|solutionrelative:appdam-api\\repositorio\\interfaces\\icategoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDAFCD1F-FBA7-422C-B018-2D735675A7A2}|AppDAM-API\\AppDAM-API.csproj|c:\\users\\nicol\\desktop\\proyecto dami\\appdam-api\\appdam-api\\repositorio\\interfaces\\iestado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDAFCD1F-FBA7-422C-B018-2D735675A7A2}|AppDAM-API\\AppDAM-API.csproj|solutionrelative:appdam-api\\repositorio\\interfaces\\iestado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDAFCD1F-FBA7-422C-B018-2D735675A7A2}|AppDAM-API\\AppDAM-API.csproj|c:\\users\\nicol\\desktop\\proyecto dami\\appdam-api\\appdam-api\\repositorio\\interfaces\\ilibro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDAFCD1F-FBA7-422C-B018-2D735675A7A2}|AppDAM-API\\AppDAM-API.csproj|solutionrelative:appdam-api\\repositorio\\interfaces\\ilibro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDAFCD1F-FBA7-422C-B018-2D735675A7A2}|AppDAM-API\\AppDAM-API.csproj|c:\\users\\nicol\\desktop\\proyecto dami\\appdam-api\\appdam-api\\models\\editorial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDAFCD1F-FBA7-422C-B018-2D735675A7A2}|AppDAM-API\\AppDAM-API.csproj|solutionrelative:appdam-api\\models\\editorial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDAFCD1F-FBA7-422C-B018-2D735675A7A2}|AppDAM-API\\AppDAM-API.csproj|c:\\users\\nicol\\desktop\\proyecto dami\\appdam-api\\appdam-api\\repositorio\\interfaces\\iusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDAFCD1F-FBA7-422C-B018-2D735675A7A2}|AppDAM-API\\AppDAM-API.csproj|solutionrelative:appdam-api\\repositorio\\interfaces\\iusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDAFCD1F-FBA7-422C-B018-2D735675A7A2}|AppDAM-API\\AppDAM-API.csproj|c:\\users\\nicol\\desktop\\proyecto dami\\appdam-api\\appdam-api\\repositorio\\interfaces\\iautor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDAFCD1F-FBA7-422C-B018-2D735675A7A2}|AppDAM-API\\AppDAM-API.csproj|solutionrelative:appdam-api\\repositorio\\interfaces\\iautor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDAFCD1F-FBA7-422C-B018-2D735675A7A2}|AppDAM-API\\AppDAM-API.csproj|c:\\users\\nicol\\desktop\\proyecto dami\\appdam-api\\appdam-api\\repositorio\\interfaces\\ieditorial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDAFCD1F-FBA7-422C-B018-2D735675A7A2}|AppDAM-API\\AppDAM-API.csproj|solutionrelative:appdam-api\\repositorio\\interfaces\\ieditorial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDAFCD1F-FBA7-422C-B018-2D735675A7A2}|AppDAM-API\\AppDAM-API.csproj|c:\\users\\nicol\\desktop\\proyecto dami\\appdam-api\\appdam-api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{DDAFCD1F-FBA7-422C-B018-2D735675A7A2}|AppDAM-API\\AppDAM-API.csproj|solutionrelative:appdam-api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDAFCD1F-FBA7-422C-B018-2D735675A7A2}|AppDAM-API\\AppDAM-API.csproj|c:\\users\\nicol\\desktop\\proyecto dami\\appdam-api\\appdam-api\\models\\libro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDAFCD1F-FBA7-422C-B018-2D735675A7A2}|AppDAM-API\\AppDAM-API.csproj|solutionrelative:appdam-api\\models\\libro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDAFCD1F-FBA7-422C-B018-2D735675A7A2}|AppDAM-API\\AppDAM-API.csproj|c:\\users\\nicol\\desktop\\proyecto dami\\appdam-api\\appdam-api\\models\\estado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDAFCD1F-FBA7-422C-B018-2D735675A7A2}|AppDAM-API\\AppDAM-API.csproj|solutionrelative:appdam-api\\models\\estado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDAFCD1F-FBA7-422C-B018-2D735675A7A2}|AppDAM-API\\AppDAM-API.csproj|c:\\users\\nicol\\desktop\\proyecto dami\\appdam-api\\appdam-api\\models\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDAFCD1F-FBA7-422C-B018-2D735675A7A2}|AppDAM-API\\AppDAM-API.csproj|solutionrelative:appdam-api\\models\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDAFCD1F-FBA7-422C-B018-2D735675A7A2}|AppDAM-API\\AppDAM-API.csproj|c:\\users\\nicol\\desktop\\proyecto dami\\appdam-api\\appdam-api\\models\\autor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDAFCD1F-FBA7-422C-B018-2D735675A7A2}|AppDAM-API\\AppDAM-API.csproj|solutionrelative:appdam-api\\models\\autor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDAFCD1F-FBA7-422C-B018-2D735675A7A2}|AppDAM-API\\AppDAM-API.csproj|c:\\users\\nicol\\desktop\\proyecto dami\\appdam-api\\appdam-api\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDAFCD1F-FBA7-422C-B018-2D735675A7A2}|AppDAM-API\\AppDAM-API.csproj|solutionrelative:appdam-api\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +62,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -22,6 +75,175 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ILibro.cs",
+              "DocumentMoniker": "C:\\Users\\Nicol\\Desktop\\Proyecto DAMI\\AppDAM-API\\AppDAM-API\\Repositorio\\Interfaces\\ILibro.cs",
+              "RelativeDocumentMoniker": "AppDAM-API\\Repositorio\\Interfaces\\ILibro.cs",
+              "ToolTip": "C:\\Users\\Nicol\\Desktop\\Proyecto DAMI\\AppDAM-API\\AppDAM-API\\Repositorio\\Interfaces\\ILibro.cs",
+              "RelativeToolTip": "AppDAM-API\\Repositorio\\Interfaces\\ILibro.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T15:39:31.163Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IEstado.cs",
+              "DocumentMoniker": "C:\\Users\\Nicol\\Desktop\\Proyecto DAMI\\AppDAM-API\\AppDAM-API\\Repositorio\\Interfaces\\IEstado.cs",
+              "RelativeDocumentMoniker": "AppDAM-API\\Repositorio\\Interfaces\\IEstado.cs",
+              "ToolTip": "C:\\Users\\Nicol\\Desktop\\Proyecto DAMI\\AppDAM-API\\AppDAM-API\\Repositorio\\Interfaces\\IEstado.cs",
+              "RelativeToolTip": "AppDAM-API\\Repositorio\\Interfaces\\IEstado.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T15:39:06.617Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ICategoria.cs",
+              "DocumentMoniker": "C:\\Users\\Nicol\\Desktop\\Proyecto DAMI\\AppDAM-API\\AppDAM-API\\Repositorio\\Interfaces\\ICategoria.cs",
+              "RelativeDocumentMoniker": "AppDAM-API\\Repositorio\\Interfaces\\ICategoria.cs",
+              "ToolTip": "C:\\Users\\Nicol\\Desktop\\Proyecto DAMI\\AppDAM-API\\AppDAM-API\\Repositorio\\Interfaces\\ICategoria.cs",
+              "RelativeToolTip": "AppDAM-API\\Repositorio\\Interfaces\\ICategoria.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T15:38:36.875Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IEditorial.cs",
+              "DocumentMoniker": "C:\\Users\\Nicol\\Desktop\\Proyecto DAMI\\AppDAM-API\\AppDAM-API\\Repositorio\\Interfaces\\IEditorial.cs",
+              "RelativeDocumentMoniker": "AppDAM-API\\Repositorio\\Interfaces\\IEditorial.cs",
+              "ToolTip": "C:\\Users\\Nicol\\Desktop\\Proyecto DAMI\\AppDAM-API\\AppDAM-API\\Repositorio\\Interfaces\\IEditorial.cs",
+              "RelativeToolTip": "AppDAM-API\\Repositorio\\Interfaces\\IEditorial.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T15:30:21.256Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IAutor.cs",
+              "DocumentMoniker": "C:\\Users\\Nicol\\Desktop\\Proyecto DAMI\\AppDAM-API\\AppDAM-API\\Repositorio\\Interfaces\\IAutor.cs",
+              "RelativeDocumentMoniker": "AppDAM-API\\Repositorio\\Interfaces\\IAutor.cs",
+              "ToolTip": "C:\\Users\\Nicol\\Desktop\\Proyecto DAMI\\AppDAM-API\\AppDAM-API\\Repositorio\\Interfaces\\IAutor.cs",
+              "RelativeToolTip": "AppDAM-API\\Repositorio\\Interfaces\\IAutor.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T15:29:49.381Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IUsuario.cs",
+              "DocumentMoniker": "C:\\Users\\Nicol\\Desktop\\Proyecto DAMI\\AppDAM-API\\AppDAM-API\\Repositorio\\Interfaces\\IUsuario.cs",
+              "RelativeDocumentMoniker": "AppDAM-API\\Repositorio\\Interfaces\\IUsuario.cs",
+              "ToolTip": "C:\\Users\\Nicol\\Desktop\\Proyecto DAMI\\AppDAM-API\\AppDAM-API\\Repositorio\\Interfaces\\IUsuario.cs",
+              "RelativeToolTip": "AppDAM-API\\Repositorio\\Interfaces\\IUsuario.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T15:29:04.687Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Nicol\\Desktop\\Proyecto DAMI\\AppDAM-API\\AppDAM-API\\appsettings.json",
+              "RelativeDocumentMoniker": "AppDAM-API\\appsettings.json",
+              "ToolTip": "C:\\Users\\Nicol\\Desktop\\Proyecto DAMI\\AppDAM-API\\AppDAM-API\\appsettings.json",
+              "RelativeToolTip": "AppDAM-API\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAABOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-06-20T15:15:39.672Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Libro.cs",
+              "DocumentMoniker": "C:\\Users\\Nicol\\Desktop\\Proyecto DAMI\\AppDAM-API\\AppDAM-API\\Models\\Libro.cs",
+              "RelativeDocumentMoniker": "AppDAM-API\\Models\\Libro.cs",
+              "ToolTip": "C:\\Users\\Nicol\\Desktop\\Proyecto DAMI\\AppDAM-API\\AppDAM-API\\Models\\Libro.cs",
+              "RelativeToolTip": "AppDAM-API\\Models\\Libro.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACgAAABJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T15:04:39.327Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Estado.cs",
+              "DocumentMoniker": "C:\\Users\\Nicol\\Desktop\\Proyecto DAMI\\AppDAM-API\\AppDAM-API\\Models\\Estado.cs",
+              "RelativeDocumentMoniker": "AppDAM-API\\Models\\Estado.cs",
+              "ToolTip": "C:\\Users\\Nicol\\Desktop\\Proyecto DAMI\\AppDAM-API\\AppDAM-API\\Models\\Estado.cs",
+              "RelativeToolTip": "AppDAM-API\\Models\\Estado.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T15:01:28.696Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Categoria.cs",
+              "DocumentMoniker": "C:\\Users\\Nicol\\Desktop\\Proyecto DAMI\\AppDAM-API\\AppDAM-API\\Models\\Categoria.cs",
+              "RelativeDocumentMoniker": "AppDAM-API\\Models\\Categoria.cs",
+              "ToolTip": "C:\\Users\\Nicol\\Desktop\\Proyecto DAMI\\AppDAM-API\\AppDAM-API\\Models\\Categoria.cs",
+              "RelativeToolTip": "AppDAM-API\\Models\\Categoria.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAxwBAAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T14:57:58.807Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Editorial.cs",
+              "DocumentMoniker": "C:\\Users\\Nicol\\Desktop\\Proyecto DAMI\\AppDAM-API\\AppDAM-API\\Models\\Editorial.cs",
+              "RelativeDocumentMoniker": "AppDAM-API\\Models\\Editorial.cs",
+              "ToolTip": "C:\\Users\\Nicol\\Desktop\\Proyecto DAMI\\AppDAM-API\\AppDAM-API\\Models\\Editorial.cs",
+              "RelativeToolTip": "AppDAM-API\\Models\\Editorial.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T14:54:46.866Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Autor.cs",
+              "DocumentMoniker": "C:\\Users\\Nicol\\Desktop\\Proyecto DAMI\\AppDAM-API\\AppDAM-API\\Models\\Autor.cs",
+              "RelativeDocumentMoniker": "AppDAM-API\\Models\\Autor.cs",
+              "ToolTip": "C:\\Users\\Nicol\\Desktop\\Proyecto DAMI\\AppDAM-API\\AppDAM-API\\Models\\Autor.cs",
+              "RelativeToolTip": "AppDAM-API\\Models\\Autor.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAgwAQAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T14:51:43.208Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\Nicol\\Desktop\\Proyecto DAMI\\AppDAM-API\\AppDAM-API\\Models\\Usuario.cs",
+              "RelativeDocumentMoniker": "AppDAM-API\\Models\\Usuario.cs",
+              "ToolTip": "C:\\Users\\Nicol\\Desktop\\Proyecto DAMI\\AppDAM-API\\AppDAM-API\\Models\\Usuario.cs",
+              "RelativeToolTip": "AppDAM-API\\Models\\Usuario.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAxwAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T14:41:28.135Z",
+              "EditorCaption": ""
             }
           ]
         }
