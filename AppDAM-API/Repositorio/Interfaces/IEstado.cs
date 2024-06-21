@@ -6,8 +6,8 @@ namespace AppDAM_API.Repositorio.Interfaces
     {
         IEnumerable<Estado> obtenerEstados();
         Estado obtenerEstadoPorId(int id);
-        int registrarEstado(Estado reg);
-        int actualizarEstado(Estado reg);
-        int eliminarEstado(int id);
+        string registrarEstado(Estado reg);
+        string actualizarEstado(Estado reg);
+        string eliminarEstado(int id);
     }
 }

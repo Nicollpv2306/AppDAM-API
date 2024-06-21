@@ -6,8 +6,8 @@ namespace AppDAM_API.Repositorio.Interfaces
     {
         IEnumerable<Libro> obtenerLibros();
         Libro obtenerLibroPorId(int id);
-        int registrarLibro(Libro reg);
-        int actualizarLibro(Libro reg);
-        int eliminarLibro(int id);
+        string registrarLibro(Libro reg);
+        string actualizarLibro(Libro reg);
+        string eliminarLibro(int id);
     }
 }
