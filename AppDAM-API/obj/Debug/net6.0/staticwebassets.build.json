@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "7lKBFpa+1CmAnjgdFF24AeQ7S6nuj1D0PPf8kd7c5gU=",
+  "Source": "AppDAM-API",
+  "BasePath": "_content/AppDAM-API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

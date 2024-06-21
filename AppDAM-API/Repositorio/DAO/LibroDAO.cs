@@ -107,12 +107,12 @@ namespace AppDAM_API.Repositorio.DAO
 
                 reg.Id_libro = dr.GetInt32("id_libro");
                 reg.Titulo = dr.GetString("titulo");
-                reg.Id_autor = dr.GetInt32("Autor");
-                reg.Id_editorial = dr.GetInt32("Editorial");
+                reg.Id_autor = dr.GetInt32("id_autor");
+                reg.Id_editorial = dr.GetInt32("id_editorial");
                 reg.Descripcion = dr.GetString("descripcion");
                 reg.Imagen = dr.GetString("imagen");
-                reg.Id_categoria = dr.GetInt32("Categoria");
-                reg.Id_estado = dr.GetInt32("Estado");
+                reg.Id_categoria = dr.GetInt32("id_categoria");
+                reg.Id_estado = dr.GetInt32("id_estado");
 
                 lstLibros.Add(reg);
             }
