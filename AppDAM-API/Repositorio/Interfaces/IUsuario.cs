@@ -6,8 +6,8 @@ namespace AppDAM_API.Repositorio.Interfaces
     {
         IEnumerable<Usuario> obtenerUsuarios();
         Usuario obtenerUsuarioPorId(int id);
-        int registrarUsuario(Usuario reg);
-        int actualizarUsuario(Usuario reg);
-        int eliminarUsuario(int id);
+        string registrarUsuario(Usuario reg);
+        string actualizarUsuario(Usuario reg);
+        string eliminarUsuario(int id);
     }
 }

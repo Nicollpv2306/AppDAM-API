@@ -6,8 +6,8 @@ namespace AppDAM_API.Repositorio.Interfaces
     {
         IEnumerable<Editorial> obtenerEditoriales();
         Editorial obtenerEditorialPorId(int id);
-        int registrarEditorial(Editorial reg);
-        int actualizarEditorial(Editorial reg);
-        int eliminarEditorial(int id);
+        string registrarEditorial(Editorial reg);
+        string actualizarEditorial(Editorial reg);
+        string eliminarEditorial(int id);
     }
 }

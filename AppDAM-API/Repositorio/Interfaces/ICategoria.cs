@@ -6,8 +6,8 @@ namespace AppDAM_API.Repositorio.Interfaces
     {
         IEnumerable<Categoria> obtenerCategorias();
         Categoria obtenerCategoriaPorId(int id);
-        int registrarCategoria(Categoria reg);
-        int actualizarCategoria(Categoria reg);
-        int eliminarCategoria(int id);
+        string registrarCategoria(Categoria reg);
+        string actualizarCategoria(Categoria reg);
+        string eliminarCategoria(int id);
     }
 }
