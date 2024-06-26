@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AppDAM-API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3fcff97e8d49b7579f3d6391983777325d11495d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2c1994d2d87730ae29f51137740c170afaeffffa")]
 [assembly: System.Reflection.AssemblyProductAttribute("AppDAM-API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AppDAM-API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
