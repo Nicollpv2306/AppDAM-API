@@ -29,6 +29,7 @@ namespace AppDAM_API.Repositorio.DAO
 
                 cmd.Parameters.AddWithValue("@id_categoria", reg.Id_categoria);
                 cmd.Parameters.AddWithValue("@nombre", reg.Nombre);
+                cmd.Parameters.AddWithValue("@descripcion", reg.Descripcion);
 
                 resultado = cmd.ExecuteNonQuery();
                 mensaje = "Actualizacion Exitosa - Cantidad de filas actualizadas: " + resultado;
@@ -88,7 +89,7 @@ namespace AppDAM_API.Repositorio.DAO
             List<Categoria> lstCategorias = new List<Categoria>();
             SqlConnection cn = new SqlConnection(cadena);
 
-            SqlCommand cmd = new SqlCommand("usp_listaCategorias", cn);
+            SqlCommand cmd = new SqlCommand("usp_listaCategoria", cn);
             cmd.CommandType = CommandType.StoredProcedure;
 
             cn.Open();
@@ -101,6 +102,7 @@ namespace AppDAM_API.Repositorio.DAO
 
                 reg.Id_categoria = dr.GetInt32("id_categoria");
                 reg.Nombre = dr.GetString("nombre");
+                reg.Descripcion = dr.GetString("descripcion");
 
                 lstCategorias.Add(reg);
             }
@@ -125,6 +127,7 @@ namespace AppDAM_API.Repositorio.DAO
                 cmd.CommandType = CommandType.StoredProcedure;
 
                 cmd.Parameters.AddWithValue("@nombre", reg.Nombre);
+                cmd.Parameters.AddWithValue("@descripcion", reg.Descripcion);
 
                 resultado = cmd.ExecuteNonQuery();
                 mensaje = "Registro Exitoso - Cantidad de filas insertadas: " + resultado;

@@ -6,14 +6,15 @@ using Microsoft.Data.SqlClient;
 
 namespace AppDAM_API.Repositorio.DAO
 {
-    public class EstadoDAO : IEstado
+    public class LoginAppDAO : ILoginApp
     {
         private readonly string cadena;
-        public EstadoDAO()
+        public LoginAppDAO()
         {
             cadena = new ConfigurationBuilder().AddJsonFile("appsettings.json").Build().GetConnectionString("sql");
         }
-        public string actualizarEstado(Estado reg)
+
+        public string actualizarLoginApp(LoginApp reg)
         {
             SqlConnection cn = new SqlConnection(cadena);
 
@@ -24,14 +25,16 @@ namespace AppDAM_API.Repositorio.DAO
 
             try
             {
-                SqlCommand cmd = new SqlCommand("usp_updateEstado", cn);
+                SqlCommand cmd = new SqlCommand("usp_updateLoginApp", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
 
-                cmd.Parameters.AddWithValue("@id_estado", reg.Id_estado);
-                cmd.Parameters.AddWithValue("@tipo_estado", reg.Tipo_estado);
+                cmd.Parameters.AddWithValue("@id_login", reg.Id_login);
+                cmd.Parameters.AddWithValue("@usuario", reg.Usuario);
+                cmd.Parameters.AddWithValue("@contrasenia", reg.Contrasenia);
 
                 resultado = cmd.ExecuteNonQuery();
                 mensaje = "Actualizacion Exitosa - Cantidad de filas actualizadas: " + resultado;
+
             }
             catch (SqlException ex)
             {
@@ -44,7 +47,7 @@ namespace AppDAM_API.Repositorio.DAO
             return mensaje;
         }
 
-        public string eliminarEstado(int id)
+        public string eliminarLoginApp(int id)
         {
             SqlConnection cn = new SqlConnection(cadena);
 
@@ -55,15 +58,15 @@ namespace AppDAM_API.Repositorio.DAO
 
             try
             {
-                SqlCommand cmd = new SqlCommand("usp_deleteEstado", cn);
+                SqlCommand cmd = new SqlCommand("usp_deleteLoginApp", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
 
-                cmd.Parameters.AddWithValue("@id_estado", id);
+                cmd.Parameters.AddWithValue("@id_login", id);
 
                 resultado = cmd.ExecuteNonQuery();
-                mensaje = "Eliminacion Exitosa - Cantidad de filas eliminadas: " + resultado;
+                mensaje = "Eliminacion exitosa - Cantidad de filas eliminadas: " + resultado;
             }
-            catch (SqlException ex)
+            catch(SqlException ex)
             {
                 mensaje = ex.Message;
             }
@@ -74,21 +77,21 @@ namespace AppDAM_API.Repositorio.DAO
             return mensaje;
         }
 
-        public Estado obtenerEstadoPorId(int id)
+        public LoginApp obtenerLoginAppPorId(int id)
         {
-            var estado = obtenerEstados().Where(c => c.Id_estado ==  id).FirstOrDefault();
-            if (estado == null)
-                return new Estado();
+            var login = obtenerLoginApps().Where(c => c.Id_login == id).FirstOrDefault();
+            if(login == null)
+                return new LoginApp();
             else
-                return estado;
+                return login;
         }
 
-        public IEnumerable<Estado> obtenerEstados()
+        public IEnumerable<LoginApp> obtenerLoginApps()
         {
-            List<Estado> lstEstados = new List<Estado>();
+            List<LoginApp> lstLoginApps = new List<LoginApp>();
             SqlConnection cn = new SqlConnection(cadena);
 
-            SqlCommand cmd = new SqlCommand("usp_listaEstado", cn);
+            SqlCommand cmd = new SqlCommand("usp_listaLoginApp", cn);
             cmd.CommandType = CommandType.StoredProcedure;
 
             cn.Open();
@@ -97,20 +100,21 @@ namespace AppDAM_API.Repositorio.DAO
 
             while (dr.Read())
             {
-                Estado reg = new Estado();
+                LoginApp reg = new LoginApp();
 
-                reg.Id_estado = dr.GetInt32("id_estado");
-                reg.Tipo_estado = dr.GetString("tipo_estado");
+                reg.Id_login = dr.GetInt32("id_login");
+                reg.Usuario = dr.GetString("usuario");
+                reg.Contrasenia = dr.GetString("contrasenia");
 
-                lstEstados.Add(reg);
+                lstLoginApps.Add(reg);
             }
             dr.Close();
             cn.Close();
 
-            return lstEstados;
+            return lstLoginApps;
         }
 
-        public string registrarEstado(Estado reg)
+        public string registrarLoginApp(LoginApp reg)
         {
             SqlConnection cn = new SqlConnection(cadena);
 
@@ -121,15 +125,17 @@ namespace AppDAM_API.Repositorio.DAO
 
             try
             {
-                SqlCommand cmd = new SqlCommand("usp_addEstado", cn);
+                SqlCommand cmd = new SqlCommand("usp_addLoginApp", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
 
-                cmd.Parameters.AddWithValue("@tipo_estado", reg.Tipo_estado);
+                cmd.Parameters.AddWithValue("@usuario", reg.Usuario);
+                cmd.Parameters.AddWithValue("@contrasenia", reg.Contrasenia);
 
                 resultado = cmd.ExecuteNonQuery();
                 mensaje = "Registro Exitoso - Cantidad de filas insertadas: " + resultado;
+
             }
-            catch (SqlException ex)
+            catch(SqlException ex)
             {
                 mensaje = ex.Message;
             }
@@ -139,5 +145,6 @@ namespace AppDAM_API.Repositorio.DAO
             }
             return mensaje;
         }
+
     }
 }
