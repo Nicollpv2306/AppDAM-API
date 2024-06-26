@@ -6,14 +6,14 @@ using Microsoft.Data.SqlClient;
 
 namespace AppDAM_API.Repositorio.DAO
 {
-    public class AutorDAO : IAutor
+    public class PedidoDAO : IPedido
     {
         private readonly string cadena;
-        public AutorDAO()
+        public PedidoDAO()
         {
             cadena = new ConfigurationBuilder().AddJsonFile("appsettings.json").Build().GetConnectionString("sql");
         }
-        public string actualizarAutor(Autor reg)
+        public string actualizarPedido(Pedido reg)
         {
             SqlConnection cn = new SqlConnection(cadena);
 
@@ -24,12 +24,15 @@ namespace AppDAM_API.Repositorio.DAO
 
             try
             {
-                SqlCommand cmd = new SqlCommand("usp_updateAutor", cn);
+                SqlCommand cmd = new SqlCommand("usp_updatePedido", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
 
-                cmd.Parameters.AddWithValue("@id_autor", reg.Id_autor);
-                cmd.Parameters.AddWithValue("@nombre", reg.Nombre);
-                cmd.Parameters.AddWithValue("@apellido", reg.Apellido);
+                cmd.Parameters.AddWithValue("@id_pedido", reg. Id_pedido);
+                cmd.Parameters.AddWithValue("@nom_cli", reg.Nom_cli);
+                cmd.Parameters.AddWithValue("@num_mesa", reg.Num_mesa);
+                cmd.Parameters.AddWithValue("@detalle", reg.Detalle);
+                cmd.Parameters.AddWithValue("@precio", reg.Precio);
+                cmd.Parameters.AddWithValue("@id_producto", reg.Id_producto);
 
                 resultado = cmd.ExecuteNonQuery();
                 mensaje = "Actualizacion Exitosa - Cantidad de filas actualizadas: " + resultado;
@@ -45,7 +48,7 @@ namespace AppDAM_API.Repositorio.DAO
             return mensaje;
         }
 
-        public string eliminarAutor(int id)
+        public string eliminarPedido(int id)
         {
             SqlConnection cn = new SqlConnection(cadena);
 
@@ -56,10 +59,10 @@ namespace AppDAM_API.Repositorio.DAO
 
             try
             {
-                SqlCommand cmd = new SqlCommand("usp_deleteAutor", cn);
+                SqlCommand cmd = new SqlCommand("usp_deletePedido", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
 
-                cmd.Parameters.AddWithValue("@id_autor", id);
+                cmd.Parameters.AddWithValue("@id_pedido", id);
 
                 resultado = cmd.ExecuteNonQuery();
                 mensaje = "Eliminacion Exitosa - Cantidad de filas eliminadas: " + resultado;
@@ -75,12 +78,21 @@ namespace AppDAM_API.Repositorio.DAO
             return mensaje;
         }
 
-        public IEnumerable<Autor> obtenerAutores()
+        public Pedido obtenerPedidoPorId(int id)
         {
-            List<Autor> lstAutores = new List<Autor>();
+            var pedido = obtenerPedidos().Where(c => c.Id_pedido == id).FirstOrDefault();
+            if (pedido == null)
+                return new Pedido();
+            else
+                return pedido;
+        }
+
+        public IEnumerable<Pedido> obtenerPedidos()
+        {
+            List<Pedido> lstPedidos = new List<Pedido>();
             SqlConnection cn = new SqlConnection(cadena);
 
-            SqlCommand cmd = new SqlCommand("usp_listaAutores", cn);
+            SqlCommand cmd = new SqlCommand("usp_listaPedido", cn);
             cmd.CommandType = CommandType.StoredProcedure;
 
             cn.Open();
@@ -89,30 +101,24 @@ namespace AppDAM_API.Repositorio.DAO
 
             while (dr.Read())
             {
-                Autor reg = new Autor();
+                Pedido reg = new Pedido();
 
-                reg.Id_autor = dr.GetInt32("id_autor");
-                reg.Nombre = dr.GetString("nombre");
-                reg.Apellido = dr.GetString("apellido");
+                reg.Id_pedido = dr.GetInt32("id_pedido");
+                reg.Nom_cli = dr.GetString("nom_cli");
+                reg.Num_mesa = dr.GetInt32("num_mesa");
+                reg.Detalle = dr.GetString("detalle");
+                reg.Precio = dr.GetDecimal("precio");
+                reg.Id_producto = dr.GetInt32("id_producto");
 
-                lstAutores.Add(reg);
+                lstPedidos.Add(reg);
             }
             dr.Close();
             cn.Close();
 
-            return lstAutores;
+            return lstPedidos;
         }
 
-        public Autor obtenerAutorPorId(int id)
-        {
-            var autor = obtenerAutores().Where(c => c.Id_autor == id).FirstOrDefault();
-            if (autor == null)
-                return new Autor();
-            else
-                return autor;
-        }
-
-        public string registrarAutor(Autor reg)
+        public string registrarPedido(Pedido reg)
         {
             SqlConnection cn = new SqlConnection(cadena);
 
@@ -123,11 +129,15 @@ namespace AppDAM_API.Repositorio.DAO
 
             try
             {
-                SqlCommand cmd = new SqlCommand("usp_addAutor", cn);
+                SqlCommand cmd = new SqlCommand("usp_addPedido", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
 
-                cmd.Parameters.AddWithValue("@nombre", reg.Nombre);
-                cmd.Parameters.AddWithValue("@apellido", reg.Apellido);
+                cmd.Parameters.AddWithValue("@id_pedido", reg.Id_pedido);
+                cmd.Parameters.AddWithValue("@nom_cli", reg.Nom_cli);
+                cmd.Parameters.AddWithValue("@num_mesa", reg.Num_mesa);
+                cmd.Parameters.AddWithValue("@detalle", reg.Detalle);
+                cmd.Parameters.AddWithValue("@precio", reg.Precio);
+                cmd.Parameters.AddWithValue("@id_producto", reg.Id_producto);
 
                 resultado = cmd.ExecuteNonQuery();
                 mensaje = "Registro Exitoso - Cantidad de filas insertadas: " + resultado;

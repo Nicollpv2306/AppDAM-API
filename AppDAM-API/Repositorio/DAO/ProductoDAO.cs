@@ -6,14 +6,14 @@ using Microsoft.Data.SqlClient;
 
 namespace AppDAM_API.Repositorio.DAO
 {
-    public class EditorialDAO : IEditorial
+    public class ProductoDAO : IProducto
     {
         private readonly string cadena;
-        public EditorialDAO()
+        public ProductoDAO()
         {
             cadena = new ConfigurationBuilder().AddJsonFile("appsettings.json").Build().GetConnectionString("sql");
         }
-        public string actualizarEditorial(Editorial reg)
+        public string actualizarProducto(Producto reg)
         {
             SqlConnection cn = new SqlConnection(cadena);
 
@@ -24,13 +24,15 @@ namespace AppDAM_API.Repositorio.DAO
 
             try
             {
-                SqlCommand cmd = new SqlCommand("usp_updateEditorial", cn);
+                SqlCommand cmd = new SqlCommand("usp_updateProducto", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
 
-                cmd.Parameters.AddWithValue("@id_editorial", reg.Id_editorial);
+                cmd.Parameters.AddWithValue("@id_producto", reg.Id_producto);
                 cmd.Parameters.AddWithValue("@nombre", reg.Nombre);
-                cmd.Parameters.AddWithValue("@direccion", reg.Direccion);
-                cmd.Parameters.AddWithValue("@correo", reg.Correo);
+                cmd.Parameters.AddWithValue("@precio", reg.Precio);
+                cmd.Parameters.AddWithValue("@descripcion", reg.Descripcion);
+                cmd.Parameters.AddWithValue("@foto", reg.Foto);
+                cmd.Parameters.AddWithValue("@id_categoria", reg.Id_categoria);
 
                 resultado = cmd.ExecuteNonQuery();
                 mensaje = "Actualizacion Exitosa - Cantidad de filas actualizadas: " + resultado;
@@ -46,7 +48,7 @@ namespace AppDAM_API.Repositorio.DAO
             return mensaje;
         }
 
-        public string eliminarEditorial(int id)
+        public string eliminarProducto(int id)
         {
             SqlConnection cn = new SqlConnection(cadena);
 
@@ -57,10 +59,10 @@ namespace AppDAM_API.Repositorio.DAO
 
             try
             {
-                SqlCommand cmd = new SqlCommand("usp_deleteEditorial", cn);
+                SqlCommand cmd = new SqlCommand("usp_deleteProducto", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
 
-                cmd.Parameters.AddWithValue("@id_editorial", id);
+                cmd.Parameters.AddWithValue("@id_producto", id);
 
                 resultado = cmd.ExecuteNonQuery();
                 mensaje = "Eliminacion Exitosa - Cantidad de filas eliminadas: " + resultado;
@@ -76,12 +78,12 @@ namespace AppDAM_API.Repositorio.DAO
             return mensaje;
         }
 
-        public IEnumerable<Editorial> obtenerEditoriales()
+        public IEnumerable<Producto> obtenerProductos()
         {
-            List<Editorial> lstEditoriales = new List<Editorial>();
+            List<Producto> lstProductos = new List<Producto>();
             SqlConnection cn = new SqlConnection(cadena);
 
-            SqlCommand cmd = new SqlCommand("usp_listaEditoriales", cn);
+            SqlCommand cmd = new SqlCommand("usp_listaProducto", cn);
             cmd.CommandType = CommandType.StoredProcedure;
 
             cn.Open();
@@ -90,31 +92,33 @@ namespace AppDAM_API.Repositorio.DAO
 
             while (dr.Read())
             {
-                Editorial reg = new Editorial();
+                Producto reg = new Producto();
 
-                reg.Id_editorial = dr.GetInt32("id_editorial");
+                reg.Id_producto = dr.GetInt32("id_producto");
                 reg.Nombre = dr.GetString("nombre");
-                reg.Direccion = dr.GetString("direccion");
-                reg.Correo = dr.GetString("correo");
+                reg.Precio = dr.GetDecimal("precio");
+                reg.Descripcion = dr.GetString("descripcion");
+                reg.Foto = dr.GetString("foto");
+                reg.Id_categoria = dr.GetInt32("id_categoria");
 
-                lstEditoriales.Add(reg);
+                lstProductos.Add(reg);
             }
             dr.Close();
             cn.Close();
 
-            return lstEditoriales;
+            return lstProductos;
         }
 
-        public Editorial obtenerEditorialPorId(int id)
+        public Producto obtenerProductoPorId(int id)
         {
-            var editorial = obtenerEditoriales().Where(c => c.Id_editorial == id).FirstOrDefault();
-            if (editorial == null)
-                return new Editorial();
+            var producto = obtenerProductos().Where(c => c.Id_producto == id).FirstOrDefault();
+            if (producto == null)
+                return new Producto();
             else
-                return editorial;
+                return producto;
         }
 
-        public string registrarEditorial(Editorial reg)
+        public string registrarProducto(Producto reg)
         {
             SqlConnection cn = new SqlConnection(cadena);
 
@@ -125,12 +129,14 @@ namespace AppDAM_API.Repositorio.DAO
 
             try
             {
-                SqlCommand cmd = new SqlCommand("usp_addEditorial", cn);
+                SqlCommand cmd = new SqlCommand("usp_addProducto", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
 
                 cmd.Parameters.AddWithValue("@nombre", reg.Nombre);
-                cmd.Parameters.AddWithValue("@direccion", reg.Direccion);
-                cmd.Parameters.AddWithValue("@correo", reg.Correo);
+                cmd.Parameters.AddWithValue("@precio", reg.Precio);
+                cmd.Parameters.AddWithValue("@descripcion", reg.Descripcion);
+                cmd.Parameters.AddWithValue("@foto", reg.Foto);
+                cmd.Parameters.AddWithValue("@id_categoria", reg.Id_categoria);
 
                 resultado = cmd.ExecuteNonQuery();
                 mensaje = "Registro Exitoso - Cantidad de filas insertadas: " + resultado;
